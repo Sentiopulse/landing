@@ -52,6 +52,8 @@ export default function MeetSentioPulseSection() {
             className="inline-flex h-14 w-14 items-center justify-center rounded-full
                            bg-gradient-to-br from-chart-2 via-chart-3 to-[oklch(0.627_0.265_303.9)] shadow"
           >
+          <span className="inline-flex h-14 w-14 items-center justify-center rounded-full
+                           bg-gradient-to-br from-chart-2 via-chart-3 to-[oklch(0.627_0.265_303.9)] shadow">
             <Zap className="w-7 h-7 text-white" />
           </span>
           <div>
@@ -112,6 +114,7 @@ export default function MeetSentioPulseSection() {
             <p className="text-base text-neutral-300 max-w-md">
               Every signal comes with a confidence score, helping you gauge the
               reliability of the sentiment data.
+              Get market sentiment signals in under 10 minutes from post to dashboard, keeping you ahead of market movements.
             </p>
           </div>
         </div>

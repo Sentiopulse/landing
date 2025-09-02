@@ -8,9 +8,9 @@ export default function HomePage(){
   return <main>
     <HeroFrontPage/>
     <FeatureFrontPage/>
+    <FeaturePage/>
     <MeetSentioPulseSection />
     <StatsSection />
-
     <Footer />
   </main>
 }

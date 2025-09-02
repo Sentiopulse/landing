@@ -19,3 +19,17 @@ export const FeatureCards = [
         icon: TrendingDown
     }
 ]
+
+
+export const HeroFooterInfo = [
+    {
+        title:"10M+",
+        subtitle:"Posts Analyzed Daily"
+    },{
+        title:"<10min",
+        subtitle:"Signal Latency"
+    },{
+        title:"85%",
+        subtitle:"Accuracy Rate"
+    }
+]

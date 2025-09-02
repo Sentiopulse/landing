@@ -1,0 +1,33 @@
+"use client";
+import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
+import { TrendingUp } from "lucide-react";
+
+function onClickHandler(){
+    return;
+}
+function onViewHandler(){
+    return;
+}
+
+export default function HeroButton() {
+  return (
+    <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-6 font-sans">
+      <Button
+        className="text-lg bg-[linear-gradient(135deg,var(--chart-2)_0%,var(--chart-1)_70%,var(--chart-4)_90%)] hover:opacity-90"
+        size="lg" onClick={onClickHandler}
+      >
+        Start Free Trial{" "}
+        <span>
+          <ArrowRight />
+        </span>
+      </Button>
+      <Button className="text-lg bg-background text-foreground hover:bg-background" size="lg" onClick={onViewHandler}>
+        View Live Demo{" "}
+        <span>
+          <TrendingUp />
+        </span>
+      </Button>
+    </div>
+  );
+}

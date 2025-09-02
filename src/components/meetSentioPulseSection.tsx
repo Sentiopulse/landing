@@ -48,10 +48,6 @@ export default function MeetSentioPulseSection() {
         </div>
         {/* Card 2 */}
         <div className="relative rounded-2xl border border-neutral-700 bg-black/40 shadow-2xl backdrop-blur-xl p-7 flex items-start gap-5 transition duration-200 hover:border-chart-3">
-          <span
-            className="inline-flex h-14 w-14 items-center justify-center rounded-full
-                           bg-gradient-to-br from-chart-2 via-chart-3 to-[oklch(0.627_0.265_303.9)] shadow"
-          >
           <span className="inline-flex h-14 w-14 items-center justify-center rounded-full
                            bg-gradient-to-br from-chart-2 via-chart-3 to-[oklch(0.627_0.265_303.9)] shadow">
             <Zap className="w-7 h-7 text-white" />

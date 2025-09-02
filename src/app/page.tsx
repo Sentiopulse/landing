@@ -7,8 +7,6 @@ export default function HomePage(){
   return <main>
     
     <FeaturePage/>
-
-    <Button>Test</Button>
     <MeetSentioPulseSection />
     <StatsSection />
 

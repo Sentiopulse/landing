@@ -37,10 +37,10 @@ export default function Navbar() {
       </div>
 
       <div className="space-x-6">
-        <Button className="bg-transparent text-foreground hover:bg-muted-foreground text-md">
+        <Button className="bg-transparent text-foreground hover:bg-muted-foreground text-base">
           Sign in
         </Button>
-        <Button className="font-bold bg-gradient-to-br from-chart-2 via-chart-1 to-chart-4 hover:from-chart-2 hover:via-chart-1 hover:to-chart-4 text-md">
+        <Button className="font-bold bg-gradient-to-br from-chart-2 via-chart-1 to-chart-4 hover:from-chart-2 hover:via-chart-1 hover:to-chart-4 text-base">
           Get Started
         </Button>
       </div>

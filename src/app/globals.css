@@ -110,6 +110,9 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --custom-green: #218F58;
+  --custom-blue: #377380;
+  --custom-purple: #6338BA;
 }
 
 @layer base {

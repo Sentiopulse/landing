@@ -1,5 +1,5 @@
 import Footer from "@/components/footer";
-import StatsSection from "@/components/statsSection";
+import StatsSection from "@/components/Stats/StatsSection";
 import MeetSentioPulseSection from "@/components/meetSentioPulseSection";
 import HeroFrontPage from "./hero/page";
 import FeatureFrontPage from "./features/page";

@@ -6,6 +6,12 @@ export default function Navbar() {
   return (
     <nav className="flex flex-col md:flex-row items-center justify-between bg-transparent font-sans border-b shadow-lg mb-6 px-6">
       <div className="flex items-center space-x-6 md:space-x-4">
+        <ChartColumn
+          className="w-6 h-6 md:w-12 md:h-12 p-1.5 rounded-4xl text-background mx-auto"
+          style={{
+              background:
+                "linear-gradient(90deg, var(--custom-green) 0%, var(--custom-blue) 40%, var(--custom-purple) 90%)",
+            }}/>
         <ChartColumn className="bg-gradient-to-br from-chart-2 [0%] via-chart-1 [60%] to-chart-4 [70%] text-black w-12 h-12 p-1.5 rounded-4xl" />
         <span className="font-bold text-xl">SentioPulse</span>
       </div>
@@ -40,7 +46,8 @@ export default function Navbar() {
         <Button className="bg-transparent text-foreground hover:bg-muted-foreground text-base">
           Sign in
         </Button>
-        <Button className="font-bold bg-gradient-to-br from-chart-2 via-chart-1 to-chart-4 hover:from-chart-2 hover:via-chart-1 hover:to-chart-4 text-base">
+        <Button className="text-lg bg-[linear-gradient(135deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)] hover:opacity-90">
+
           Get Started
         </Button>
       </div>

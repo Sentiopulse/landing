@@ -6,11 +6,11 @@ export default function HeroTitleAndDescription() {
       {/* Icon */}
       <div className="flex justify-center mb-10 w-full">
         <ChartColumn
-          className="w-12 h-12 md:w-14 md:h-14 p-1.5 rounded-4xl text-black mx-auto"
+          className="w-12 h-12 md:w-14 md:h-14 p-1.5 rounded-4xl text-background mx-auto"
           style={{
-            background:
-              "linear-gradient(135deg, var(--chart-2) 0%, var(--chart-1) 50%, var(--chart-4) 70%)",
-          }}
+              background:
+                "linear-gradient(90deg, var(--custom-green) 0%, var(--custom-blue) 40%, var(--custom-purple) 90%)",
+            }}
         />
       </div>
 
@@ -23,10 +23,10 @@ export default function HeroTitleAndDescription() {
         {/* Rectangle */}
         <div className="flex justify-center mb-10 w-full">
           <div
-            className="w-full max-w-2xl md:max-w-4xl h-12 md:h-16 rounded-lg mx-auto"
+            className="w-full max-w-2xl md:max-w-4xl h-12 md:h-16 mx-auto"
             style={{
               background:
-                "linear-gradient(90deg, var(--chart-2) 0%, var(--chart-1) 50%, var(--chart-4) 70%)",
+                "linear-gradient(90deg, var(--custom-green) 0%, var(--custom-blue) 40%, var(--custom-purple) 90%)",
             }}
           />
         </div>

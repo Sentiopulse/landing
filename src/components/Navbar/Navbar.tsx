@@ -12,6 +12,7 @@ export default function Navbar() {
               background:
                 "linear-gradient(90deg, var(--custom-green) 0%, var(--custom-blue) 40%, var(--custom-purple) 90%)",
             }}/>
+        <ChartColumn className="bg-gradient-to-br from-chart-2 [0%] via-chart-1 [60%] to-chart-4 [70%] text-black w-12 h-12 p-1.5 rounded-4xl" />
         <span className="font-bold text-xl">SentioPulse</span>
       </div>
       <div className="flex space-x-10 md:space-x-8 space-y-6 mt-6">
@@ -46,6 +47,7 @@ export default function Navbar() {
           Sign in
         </Button>
         <Button className="text-lg bg-[linear-gradient(135deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)] hover:opacity-90">
+
           Get Started
         </Button>
       </div>

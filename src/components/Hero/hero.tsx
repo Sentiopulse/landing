@@ -5,10 +5,10 @@ import { HeroFooterInfo } from "@/lib/mockData";
 
 export default function HeroPage() {
   return (
-    <div className="w-full my-10">
+    <div className="w-full my-20">
       <HeroTitleAndDescription />
       <HeroButton />
-      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-30 mt-10">
+      <div className="w-full flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center items-center gap-12 md:gap-20 mt-10">
         {HeroFooterInfo.map((info, index) => (
           <HeroFooter key={index} title={info.title} subtitle={info.subtitle} />
         ))}

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between bg-transparent font-sans border-b shadow-b-lg mb-6 px-6">
+    <nav className="flex flex-col md:flex-row items-center justify-between bg-transparent font-sans border-b shadow-lg mb-6 px-6">
       <div className="flex items-center space-x-6 md:space-x-4">
         <ChartColumn className="bg-gradient-to-br from-chart-2 [0%] via-chart-1 [60%] to-chart-4 [70%] text-black w-12 h-12 p-1.5 rounded-4xl" />
         <span className="font-bold text-xl">SentioPulse</span>
@@ -17,19 +17,19 @@ export default function Navbar() {
           Features
         </Link>
         <Link
-          href="/Pricing"
+          href="/pricing"
           className="text-lg text-muted-foreground hover:text-foreground"
         >
           Pricing
         </Link>
         <Link
-          href="/About"
+          href="/about"
           className="text-lg text-muted-foreground hover:text-foreground"
         >
           About
         </Link>
         <Link
-          href="Contact"
+          href="/contact"
           className="text-lg text-muted-foreground hover:text-foreground"
         >
           Contact

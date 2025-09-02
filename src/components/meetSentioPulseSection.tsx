@@ -24,7 +24,7 @@ export default function MeetSentioPulseSection() {
       </p>
       <div className="w-full max-w-6xl grid md:grid-cols-2 gap-8">
         {/* Card 1 */}
-        <div className="relative rounded-2xl border border-neutral-700 bg-black/40 shadow-2xl backdrop-blur-xl p-7 flex items-start gap-5 transition duration-200 hover:border-chart-2">
+        <div className="relative rounded-2xl border border-neutral-700 bg-black/40 shadow-2xl backdrop-blur-xl p-7 flex items-start gap-5 transition duration-200 hover:shadow-[0_0_20px_rgba(0,255,0,0.3)]">
           <span
             className="inline-flex h-14 w-14 items-center justify-center rounded-full
                            bg-gradient-to-br from-chart-2 via-chart-3 to-[oklch(0.627_0.265_303.9)] shadow"
@@ -47,7 +47,7 @@ export default function MeetSentioPulseSection() {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="relative rounded-2xl border border-neutral-700 bg-black/40 shadow-2xl backdrop-blur-xl p-7 flex items-start gap-5 transition duration-200 hover:border-chart-3">
+        <div className="relative rounded-2xl border border-neutral-700 bg-black/40 shadow-2xl backdrop-blur-xl p-7 flex items-start gap-5 transition duration-200 hover:shadow-[0_0_20px_rgba(0,255,0,0.3)]">
           <span className="inline-flex h-14 w-14 items-center justify-center rounded-full
                            bg-gradient-to-br from-chart-2 via-chart-3 to-[oklch(0.627_0.265_303.9)] shadow">
             <Zap className="w-7 h-7 text-white" />
@@ -68,7 +68,7 @@ export default function MeetSentioPulseSection() {
           </div>
         </div>
         {/* Card 3 - Simple Signals */}
-        <div className="relative rounded-2xl border border-neutral-700 bg-black/40 shadow-2xl backdrop-blur-xl p-7 flex items-start gap-5 transition duration-200 hover:border-chart-2">
+        <div className="relative rounded-2xl border border-neutral-700 bg-black/40 shadow-2xl backdrop-blur-xl p-7 flex items-start gap-5 transition duration-200 hover:shadow-[0_0_20px_rgba(0,255,0,0.3)]">
           <span
             className="inline-flex h-14 w-14 items-center justify-center rounded-full
                            bg-gradient-to-br from-chart-2 via-chart-3 to-[oklch(0.627_0.265_303.9)] shadow"
@@ -91,7 +91,7 @@ export default function MeetSentioPulseSection() {
           </div>
         </div>
         {/* Card 4 - Trustworthiness Score */}
-        <div className="relative rounded-2xl border border-neutral-700 bg-black/40 shadow-2xl backdrop-blur-xl p-7 flex items-start gap-5 transition duration-200 hover:border-chart-2">
+        <div className="relative rounded-2xl border border-neutral-700 bg-black/40 shadow-2xl backdrop-blur-xl p-7 flex items-start gap-5 transition duration-200 hover:shadow-[0_0_20px_rgba(0,255,0,0.3)]">
           <span
             className="inline-flex h-14 w-14 items-center justify-center rounded-full
                            bg-gradient-to-br from-chart-2 via-chart-3 to-[oklch(0.627_0.265_303.9)] shadow"

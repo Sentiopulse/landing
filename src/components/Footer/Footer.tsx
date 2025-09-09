@@ -5,22 +5,22 @@ const socialLinks = [
   {
     href: "#",
     label: "Twitter",
-    icon: <Twitter className="h-5 w-5 text-white" strokeWidth={2} />,
+    icon: <Twitter className="h-5 w-5 text-foreground" strokeWidth={2} />,
   },
   {
     href: "#",
     label: "LinkedIn",
-    icon: <Linkedin className="h-5 w-5 text-white" strokeWidth={2} />,
+    icon: <Linkedin className="h-5 w-5 text-foreground" strokeWidth={2} />,
   },
   {
     href: "#",
     label: "GitHub",
-    icon: <Github className="h-5 w-5 text-white" strokeWidth={2} />,
+    icon: <Github className="h-5 w-5 text-foreground" strokeWidth={2} />,
   },
   {
     href: "#",
     label: "Email",
-    icon: <Mail className="h-5 w-5 text-white" strokeWidth={2} />,
+    icon: <Mail className="h-5 w-5 text-foreground" strokeWidth={2} />,
   },
 ];
 

@@ -113,6 +113,7 @@
   --custom-green: #218F58;
   --custom-blue: #377380;
   --custom-purple: #6338BA;
+  --custom-card-color: #1a1f2e;
 }
 
 @layer base {

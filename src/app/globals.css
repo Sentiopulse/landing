@@ -76,6 +76,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* Custom brand tokens (light mode defaults) */
+  --custom-green: #218F58;
+  --custom-blue: #377380;
+  --custom-purple: #6338BA;
+  /* Use existing card token as the light-mode baseline */
+  --custom-card-color: var(--card);
 }
 
 .dark {
@@ -113,6 +119,7 @@
   --custom-green: #218F58;
   --custom-blue: #377380;
   --custom-purple: #6338BA;
+  --custom-card-color: #1a1f2e;
 }
 
 @layer base {

@@ -1,9 +1,11 @@
 import Footer from "@/components/Footer/Footer";
-import StatsSection from "@/components/Stats/StatsSection";
-import MeetSentioPulseSection from "@/components/meetSentioPulseSection";
-import HeroFrontPage from "./hero/page";
-import FeatureFrontPage from "./features/page";
+import MeetSentioPulseSection from "@/components/MeetSentioPulse/meetSentioPulseSection";
 import PricingSection from "@/components/PricingSection";
+import StatsSection from "@/components/Stats/StatsSection";
+import FeatureFrontPage from "./features/page";
+import HeroFrontPage from "./hero/page";
+
+
 
 export default function HomePage(){
   return <main className="w-full">

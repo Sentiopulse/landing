@@ -4,11 +4,17 @@ import { Mail } from "lucide-react";
 
 export default function StatsSection() {
   return (
-    <section className="w-full flex flex-col items-center justify-center py-10 md:py-16 bg-gradient-to-br from-[var(--chart-2)] via-[var(--chart-4)] to-[var(--chart-5)]">
+    <section
+      className="w-full flex flex-col items-center justify-center py-10 md:py-16"
+      style={{
+        background:
+          "linear-gradient(90deg, var(--custom-green) 0%, var(--custom-blue) 40%, var(--custom-purple) 90%)",
+      }}
+    >
       <h1 className="text-center font-bold leading-tight md:text-5xl text-3xl mb-5 text-[var(--primary-foreground)]">
         Ready to Transform Your Trading?
       </h1>
-      <div className="text-center text-lg md:text-xl mb-10 font-normal max-w-2xl mx-auto text-[var(--secondary-foreground)]">
+      <div className="text-center text-lg md:text-xl mb-10 font-normal max-w-2xl mx-auto text-background">
         Join thousands of traders who rely on SentioPulse for clear, actionable
         market sentiment signals.
       </div>

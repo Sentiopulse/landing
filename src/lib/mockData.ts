@@ -59,7 +59,7 @@ export const MeetSentioPulseCardInfo = [
   {
     title: "Trustworthiness Score",
     description:
-      "Every signal comes with a confidence score, helping you gauge the reliability of the sentiment data. Get market sentiment signals in under 10 minutes from post to dashboard, keeping you ahead of market movements.",
+      "Every signal comes with a confidence score, helping you gauge the reliability of the sentiment data.",
     icon: Shield,
     tag: "Trust"
   }

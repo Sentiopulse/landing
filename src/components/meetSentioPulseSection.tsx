@@ -13,7 +13,7 @@ export default function MeetSentioPulseSection() {
       {/* Title */}
       <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4">
         <span className="text-foreground">Meet </span>
-        <span className="text-[color:var(--custom-green)]">SentioPulse</span>
+        <span className="text-[var(--custom-green)]">SentioPulse</span>
       </h2>
       <p className="text-xl text-muted-foreground text-center max-w-3xl mb-12 font-normal">
         Our AI engine transforms social media chaos into clear, actionable

@@ -7,9 +7,7 @@ export default function PricingSection() {
       {/* Title */}
       <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 text-foreground">
         Choose Your{" "}
-        <span className="text-[color:var(--custom-green)]">
-          Signal Strength
-        </span>
+        <span className="text-[var(--custom-green)]">Signal Strength</span>
       </h2>
       <p className="text-lg text-muted-foreground text-center max-w-3xl mb-12 font-normal">
         Start with our free tier and upgrade when you&apos;re ready for advanced
@@ -33,24 +31,24 @@ export default function PricingSection() {
           </p>
           <ul className="text-sm text-foreground space-y-4 text-left pl-6">
             <li className="flex items-center gap-2">
-              <span className="text-[color:var(--custom-purple)]">✔</span>{" "}
-              Weekly newsletter with key insights
+              <span className="text-[var(--custom-purple)]">✔</span> Weekly
+              newsletter with key insights
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-[color:var(--custom-purple)]">✔</span> Daily
+              <span className="text-[var(--custom-purple)]">✔</span> Daily
               sentiment posts on Twitter/X
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-[color:var(--custom-purple)]">✔</span>{" "}
-              Access to public sentiment feed
+              <span className="text-[var(--custom-purple)]">✔</span> Access to
+              public sentiment feed
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-[color:var(--custom-purple)]">✔</span> Basic
+              <span className="text-[var(--custom-purple)]">✔</span> Basic
               market coverage (BTC, ETH, SPY)
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-[color:var(--custom-purple)]">✔</span>{" "}
-              Community support
+              <span className="text-[var(--custom-purple)]">✔</span> Community
+              support
             </li>
           </ul>
           <button className="bg-background text-foreground rounded-lg font-light text-lg px-10 py-4 shadow-lg transition hover:opacity-90 w-full mt-6 text-center">
@@ -59,7 +57,7 @@ export default function PricingSection() {
         </div>
 
         {/* Premium Tier Card */}
-        <div className="relative rounded-2xl border border-[color:var(--custom-green)] bg-[var(--custom-card-color)] shadow-[0_0_20px_rgba(33,143,88,0.5)] backdrop-blur-xl p-7 flex flex-col items-center gap-5 h-[650px] w-[95%] -mt-6">
+        <div className="relative rounded-2xl border border-[var(--custom-green)] bg-[var(--custom-card-color)] shadow-[0_0_20px_rgba(33,143,88,0.5)] backdrop-blur-xl p-7 flex flex-col items-center gap-5 h-[650px] w-[95%] -mt-6">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(90deg,var(--custom-purple)_0%,var(--custom-blue)_100%)] text-background text-xs px-3 py-1 rounded-full font-medium">
             Most Popular
           </div>
@@ -76,12 +74,12 @@ export default function PricingSection() {
           </p>
           <ul className="text-sm text-foreground space-y-4 text-left pl-6">
             <li className="flex items-center gap-2">
-              <span className="text-[color:var(--custom-purple)]">✔</span>{" "}
-              Real-time email alerts for custom assets
+              <span className="text-[var(--custom-purple)]">✔</span> Real-time
+              email alerts for custom assets
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-[color:var(--custom-purple)]">✔</span>{" "}
-              Interactive dashboard with filtering
+              <span className="text-[var(--custom-purple)]">✔</span> Interactive
+              dashboard with filtering
             </li>
             <li className="flex items-center gap-2">
               <span className="text-[color:var(--custom-purple)]">✔</span>{" "}
@@ -96,12 +94,12 @@ export default function PricingSection() {
               Historical sentiment data
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-[color:var(--custom-purple)]">✔</span> API
-              access (coming soon)
+              <span className="text-[var(--custom-purple)]">✔</span> API access
+              (coming soon)
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-[color:var(--custom-purple)]">✔</span>{" "}
-              Priority support
+              <span className="text-[var(--custom-purple)]">✔</span> Priority
+              support
             </li>
           </ul>
           <button className="bg-[linear-gradient(90deg,var(--custom-green)_0%,var(--custom-blue)_50%,var(--custom-purple)_100%)] text-background rounded-lg font-light text-lg px-10 py-4 shadow-lg transition hover:opacity-90 w-full mt-6 text-center">

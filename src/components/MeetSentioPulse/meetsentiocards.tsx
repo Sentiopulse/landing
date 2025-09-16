@@ -18,7 +18,7 @@ export default function MeetSentioCards() {
             key={card.title}
             className={`relative border border-border ${
               isRightCol
-                ? "bg-[var(--custom-card-color-two)]"
+                ? "bg-[var(--custom-card-color-two,var(--custom-card-color))]"
                 : "bg-[var(--custom-card-color)]"
             } shadow-2xl backdrop-blur-xl transition duration-200 hover:shadow-[0_0_20px_rgba(0,255,0,0.3)]`}
           >

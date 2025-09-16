@@ -82,6 +82,7 @@
   --custom-purple: #6338BA;
   /* Use existing card token as the light-mode baseline */
   --custom-card-color: var(--card);
+  --custom-card-color-two: var(--card);
 }
 
 .dark {

@@ -41,7 +41,10 @@ const menu = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-background text-foreground border-t border-border py-14 font-sans">
+    <footer
+      style={{ background: "var(--custom-card-color)" }}
+      className="w-full text-foreground border-t border-border py-14 font-sans"
+    >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 px-4">
         {/* Logo + brand */}
         <div className="md:col-span-2 flex flex-col mb-8">

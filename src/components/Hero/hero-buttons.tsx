@@ -14,7 +14,7 @@ export default function HeroButton() {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-6 font-sans">
       <Button
-        className="text-lg bg-background hover:bg-[linear-gradient(135deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)] text-foreground"
+        className="text-lg bg-[linear-gradient(135deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)] hover:opacity-90"
         size="lg" onClick={onClickHandler}
       >
         Start Free Trial{" "}

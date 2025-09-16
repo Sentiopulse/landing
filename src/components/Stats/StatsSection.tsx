@@ -25,7 +25,7 @@ export default function StatsSection() {
             &rarr;
           </span>
         </button>
-        <button className="bg-[var(--primary-foreground)] text-[var(--primary)] rounded-lg font-semibold text-lg px-10 py-4 flex items-center justify-center gap-2 shadow-lg transition hover:bg-[var(--chart-5)] w-full md:w-auto">
+        <button className="bg-[var(--primary-foreground)] text-[var(--primary)] rounded-lg font-semibold text-lg px-10 py-4 flex items-center justify-center gap-2 shadow-lg transition w-full md:w-auto hover:bg-[linear-gradient(90deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)]">
           Get Weekly Newsletter
           <Mail className="w-5 h-5" />
         </button>

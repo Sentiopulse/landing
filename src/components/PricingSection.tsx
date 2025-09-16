@@ -102,7 +102,7 @@ export default function PricingSection() {
               support
             </li>
           </ul>
-          <button className="bg-[linear-gradient(90deg,var(--custom-green)_0%,var(--custom-blue)_50%,var(--custom-purple)_100%)] text-background rounded-lg font-light text-lg px-10 py-4 shadow-lg transition hover:opacity-90 w-full mt-6 text-center">
+          <button className="bg-[linear-gradient(90deg,var(--custom-green)_0%,var(--custom-blue)_50%,var(--custom-purple)_100%)] text-background rounded-lg font-bold text-lg px-10 py-4 shadow-lg transition hover:opacity-90 w-full mt-6 text-center">
             Start Premium Trial
           </button>
         </div>

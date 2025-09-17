@@ -2,6 +2,13 @@ import React from "react";
 import StatCard from "./StatCard";
 import { Mail } from "lucide-react";
 
+const statCards = [
+  { value: "24/7", label: "Market Coverage" },
+  { value: "500+", label: "Assets Tracked" },
+  { value: "10M+", label: "Daily Analysis" },
+  { value: "99.9%", label: "Uptime" },
+];
+
 export default function StatsSection() {
   return (
     <section
@@ -31,10 +38,9 @@ export default function StatsSection() {
         </button>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-8 w-full max-w-3xl pt-4">
-        <StatCard value="24/7" label="Market Coverage" />
-        <StatCard value="500+" label="Assets Tracked" />
-        <StatCard value="10M+" label="Daily Analysis" />
-        <StatCard value="99.9%" label="Uptime" />
+        {statCards.map((stat) => (
+          <StatCard key={stat.label} value={stat.value} label={stat.label} />
+        ))}
       </div>
     </section>
   );

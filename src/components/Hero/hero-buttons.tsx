@@ -14,7 +14,7 @@ export default function HeroButton() {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-6 font-sans">
       <Button
-        className="text-lg bg-[linear-gradient(135deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)] hover:opacity-90"
+        className="text-lg bg-[linear-gradient(135deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)] hover:opacity-90 hover:cursor-pointer w-[350px] md:w-[200px] md:h-[50px]"
         size="lg" onClick={onClickHandler}
       >
         Start Free Trial{" "}
@@ -22,7 +22,7 @@ export default function HeroButton() {
           <ArrowRight />
         </span>
       </Button>
-      <Button className="text-lg bg-background text-foreground hover:bg-background" size="lg" onClick={onViewHandler}>
+      <Button className="text-lg bg-background text-foreground hover:bg-background hover:cursor-pointer w-[350px] md:h-[50px]" size="lg" onClick={onViewHandler}>
         View Live Demo{" "}
         <span>
           <TrendingUp />

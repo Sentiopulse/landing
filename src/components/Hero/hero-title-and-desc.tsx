@@ -23,13 +23,13 @@ export default function HeroTitleAndDescription() {
         {/* Rectangle */}
         <div className="flex justify-center mb-10 w-full">
           <div
-            className="w-full max-w-2xl md:max-w-4xl h-12 md:h-16 py-14 mx-auto flex items-center justify-center"
+            className="w-full max-w-2xl md:max-w-4xl h-12 md:h-16 py-8 md:py-14 mx-auto flex items-center justify-center"
             style={{
               background:
                 "linear-gradient(90deg, var(--custom-green) 0%, var(--custom-blue) 40%, var(--custom-purple) 90%)",
             }}
           >
-            <span className="text-white text-7xl font-bold">Clear Signals</span>
+            <span className="flex justify-center text-foreground text-4xl md:text-7xl font-bold">Clear Signals</span>
           </div>
         </div>
         {/* Description*/}

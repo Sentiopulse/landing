@@ -8,7 +8,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./ui/card";
+} from "../ui/card";
 
 export default function PricingSection() {
   return (
@@ -24,8 +24,8 @@ export default function PricingSection() {
       </p>
 
       {/* Pricing Cards */}
-      <div className="w-full max-w-6xl grid md:grid-cols-2 gap-6 mt-6">
-        <Card className="rounded-2xl border border-border bg-[var(--custom-card-color)] shadow-2xl backdrop-blur-xl p-7 flex flex-col items-center gap-5 h-[600px] w-[90%] transition duration-300 hover:shadow-[0_0_20px_rgba(33,143,88,0.5)]">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full max-w-6xl md:gap-6 gap-10 mt-6">
+        <Card className="rounded-2xl border border-border bg-[var(--custom-card-color)] shadow-2xl backdrop-blur-xl p-7 flex flex-col items-center gap-5 h-[650px] md:h-[600px] w-[90%] transition duration-300 hover:shadow-[0_0_20px_rgba(33,143,88,0.5)]">
           <CardHeader className="flex flex-col items-center gap-4">
             <span className="flex h-18 w-18 items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)] shadow">
               <Mail size={35} className="text-background" />
@@ -37,11 +37,14 @@ export default function PricingSection() {
               $0
               <span className="text-lg text-muted-foreground">/forever</span>
             </p>
-            <CardDescription className="text-md text-muted-foreground text-center whitespace-nowrap">
-              Perfect for getting started with market sentiment
+            <CardDescription className="flex flex-col md:flex-row text-md text-muted-foreground text-center whitespace-nowrap">
+              Perfect for getting started with market{" "}
+              <span>
+                sentiment
+              </span>
             </CardDescription>
           </CardHeader>
-          <CardContent className="flex justify-start w-full ">
+          <CardContent className="flex justify-start w-96 md:w-full mt-10 md:mt-1">
             <ul className="text-md text-foreground space-y-4 text-left pl-6">
               <li className="flex items-center gap-2">
                 <span className="text-[var(--custom-green)]">
@@ -76,14 +79,14 @@ export default function PricingSection() {
             </ul>
           </CardContent>
           <CardFooter>
-            <button className="bg-background text-foreground rounded-lg font-light text-lg px-10 py-4 shadow-lg transition hover:opacity-90 md:w-96 mt-6 text-center">
+            <button className="bg-background text-foreground rounded-lg font-light text-lg px-10 py-4 shadow-lg transition hover:opacity-90 w-76 md:w-96 mt-6 text-center hover:cursor-pointer">
               Start Free
             </button>
           </CardFooter>
         </Card>
 
         {/* Premium Tier Card */}
-        <Card className="relative rounded-2xl border border-[var(--custom-green)] bg-[var(--custom-card-color)] shadow-[0_0_20px_rgba(33,143,88,0.5)] backdrop-blur-xl p-7 flex flex-col items-center gap-5 h-[650px] w-[95%] -mt-6">
+        <Card className="relative rounded-2xl border border-[var(--custom-green)] bg-[var(--custom-card-color)] shadow-[0_0_20px_rgba(33,143,88,0.5)] backdrop-blur-xl p-7 flex flex-col items-center gap-5 h:[700px] md:h-[650px] w-[95%] -mt-6">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(90deg,var(--custom-purple)_0%,var(--custom-blue)_100%)] text-background text-xs px-3 py-1 rounded-full font-medium">
             Most Popular
           </div>
@@ -99,12 +102,13 @@ export default function PricingSection() {
               <span className="text-lg text-muted-foreground">/per month</span>
             </p>
             <CardDescription>
-              <p className="text-lg text-muted-foreground text-center whitespace-nowrap">
-                Advanced features for serious traders and investors
+              <p className="flex flex-col md:flex-row text-lg text-muted-foreground text-center whitespace-nowrap">
+                Advanced features for serious traders and{" "}
+                <span>investors</span>
               </p>
             </CardDescription>
           </CardHeader>
-          <CardContent className="flex justify-start w-full">
+          <CardContent className="flex justify-start w-96 md:w-full">
             <ul className="text-md text-foreground space-y-3 text-left pl-6">
               <li className="flex items-center gap-2">
                 <span className="text-[var(--custom-green)]">
@@ -151,7 +155,7 @@ export default function PricingSection() {
             </ul>
           </CardContent>
           <CardFooter>
-            <button className="bg-[linear-gradient(90deg,var(--custom-green)_0%,var(--custom-blue)_50%,var(--custom-purple)_100%)] text-background rounded-lg font-bold text-lg px-10 py-4 shadow-lg transition hover:opacity-90 md:w-96 mt-2 text-center">
+            <button className="bg-[linear-gradient(90deg,var(--custom-green)_0%,var(--custom-blue)_50%,var(--custom-purple)_100%)] text-background rounded-lg font-bold text-lg px-10 py-4 shadow-lg transition hover:opacity-90 w-76 md:w-96 mt-2 text-center hover:cursor-pointer">
               Start Premium Trial
             </button>
           </CardFooter>

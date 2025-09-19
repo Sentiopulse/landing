@@ -42,7 +42,7 @@ const menu = [
 export default function Footer() {
   return (
     <footer
-      style={{ background: "var(--custom-card-color)" }}
+      style={{ background: "var(--custom-card-color-two)" }}
       className="w-full text-foreground border-t border-border py-14 font-sans"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 px-4">

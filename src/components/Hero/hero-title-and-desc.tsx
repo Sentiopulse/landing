@@ -2,15 +2,11 @@ import { ChartColumn } from "lucide-react";
 
 export default function HeroTitleAndDescription() {
   return (
-    <div className="flex flex-col items-center justify-center w-full px-4 font-sans">
+  <div className="flex flex-col items-center justify-center w-full px-4 font-sans">
       {/* Icon */}
       <div className="flex justify-center mb-10 w-full">
         <ChartColumn
-          className="w-12 h-12 md:w-14 md:h-14 p-1.5 rounded-4xl text-background mx-auto"
-          style={{
-            background:
-              "linear-gradient(90deg, var(--custom-green) 0%, var(--custom-blue) 40%, var(--custom-purple) 90%)",
-          }}
+          className="w-12 h-12 md:w-14 md:h-14 p-1.5 rounded-4xl text-background mx-auto bg-gradient-to-r from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)]"
         />
       </div>
 
@@ -20,30 +16,21 @@ export default function HeroTitleAndDescription() {
         <h1 className="font-bold text-4xl md:text-7xl text-foreground text-center">
           Turn Market Noise Into
         </h1>
-        {/* Rectangle */}
+        {/* Gradient Text */}
         <div className="flex justify-center mb-10 w-full">
-          <div
-            className="w-full max-w-2xl md:max-w-4xl h-12 md:h-16 py-14 mx-auto flex items-center justify-center"
-            style={{
-              background:
-                "linear-gradient(90deg, var(--custom-green) 0%, var(--custom-blue) 40%, var(--custom-purple) 90%)",
-            }}
-          >
-            <span className="text-white text-7xl font-bold">Clear Signals</span>
+          <div className="w-full max-w-2xl md:max-w-4xl h-12 md:h-16 py-14 mx-auto flex items-center justify-center">
+            <span className="text-7xl font-bold bg-gradient-to-r from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)] bg-clip-text text-transparent">Clear Signals</span>
           </div>
         </div>
         {/* Description*/}
         <div className="w-full">
           <p className="text-center text-lg md:text-3xl text-muted-foreground">
             <span>
-              SentioPulse uses AI to analyze millions of social media posts and
-              deliver
+              SentioPulse uses AI to analyze millions of social media posts and deliver
             </span>
             <br />
             <span>
-              simple, actionable market sentiment signals:{" "}
-              <span className="text-chart-2">Bullish</span>, Neutral, or{" "}
-              <span className="text-destructive">Bearish</span>.
+              simple, actionable market sentiment signals: <span className="text-chart-2">Bullish</span>, Neutral, or <span className="text-destructive">Bearish</span>.
             </span>
           </p>
         </div>

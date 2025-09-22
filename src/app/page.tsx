@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/Footer";
-import MeetSentioPulseSection from "@/components/MeetSentioPulse/meetSentioPulseSection";
+import AboutSection from "@/components/MeetSentioPulse/AboutSection";
 import PricingSection from "@/components/PricingSection";
 import StatsSection from "@/components/Stats/StatsSection";
 import FeatureFrontPage from "./features/page";
@@ -11,7 +11,7 @@ export default function HomePage(){
   return <main className="w-full">
     <HeroFrontPage/>
     <FeatureFrontPage/>
-    <MeetSentioPulseSection />
+    <AboutSection />
     <PricingSection />
     <StatsSection />
     <Footer />

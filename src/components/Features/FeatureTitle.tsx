@@ -1,4 +1,4 @@
-export default function FeatureTitleAndDescription() {
+export default function FeatureTitle() {
   return (
     <div className="flex flex-col justify-center items-center mb-14">
       <h1 className="text-6xl font-bold my-4">

@@ -1,4 +1,4 @@
-export default function MeetSentioTitleAndSubtitle() {
+export default function AboutSectionTitle() {
 	return (
 		<>
 			<h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4">

@@ -6,21 +6,15 @@ import {
 } from "@/components/ui/card";
 import { MeetSentioPulseCardInfo } from "@/lib/mockData";
 
-export default function MeetSentioCards() {
+export default function AboutSectionCard() {
   return (
     <div className="w-full max-w-6xl grid md:grid-cols-2 gap-8">
       {MeetSentioPulseCardInfo.map((card, idx) => {
         const Icon = card.icon;
-        // For a 2-column grid, rightmost cards are those with odd index (1, 3, ...)
-        const isRightCol = idx % 2 === 1;
         return (
           <Card
             key={card.title}
-            className={`relative border border-border ${
-              isRightCol
-                ? "bg-[var(--custom-card-color-two,var(--custom-card-color))]"
-                : "bg-[var(--custom-card-color)]"
-            } shadow-2xl backdrop-blur-xl transition duration-200 hover:shadow-[0_0_20px_rgba(0,255,0,0.3)]`}
+            className="hover:scale-[1.03] transition-transform duration-200"
           >
             <CardHeader className="flex items-start gap-5 p-7">
               <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)] shadow">

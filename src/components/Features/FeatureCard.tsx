@@ -7,7 +7,7 @@ type ReusableFeatureCardProps = {
   icon: React.ElementType;
 };
 
-export default function ReusableFeatureCard({
+export default function FeatureCard({
   icon,
   title,
   description,

@@ -9,7 +9,6 @@ export default function HeroTitleAndDescription() {
           className="w-12 h-12 md:w-14 md:h-14 p-1.5 rounded-4xl text-background mx-auto bg-gradient-to-r from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)]"
         />
       </div>
-
       {/* Title and Description */}
       <div className="w-full flex flex-col items-center">
         {/* Title */}
@@ -19,7 +18,7 @@ export default function HeroTitleAndDescription() {
         {/* Gradient Text */}
         <div className="flex justify-center mb-10 w-full">
           <div className="w-full max-w-2xl md:max-w-4xl h-12 md:h-16 py-14 mx-auto flex items-center justify-center">
-            <span className="text-7xl font-bold bg-gradient-to-r from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)] bg-clip-text text-transparent">Clear Signals</span>
+            <span className="text-7xl font-bold bg-gradient-to-r from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)] bg-clip-text text-transparent py-1">Clear Signals</span>
           </div>
         </div>
         {/* Description*/}

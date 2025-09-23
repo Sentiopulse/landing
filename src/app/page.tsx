@@ -3,14 +3,13 @@ import MeetSentioPulseSection from "@/components/MeetSentioPulse/meetSentioPulse
 import PricingSection from "@/components/Pricing/PricingSection";
 import StatsSection from "@/components/Stats/StatsSection";
 import FeatureFrontPage from "./features/page";
-import HeroFrontPage from "./hero/page";
+import HeroSection from "@/components/Hero/HeroSection";
 
 
-
-export default function HomePage(){
+export default function HomePage() {
   return <main className="w-full">
-    <HeroFrontPage/>
-    <FeatureFrontPage/>
+    <HeroSection />
+    <FeatureFrontPage />
     <MeetSentioPulseSection />
     <PricingSection />
     <StatsSection />

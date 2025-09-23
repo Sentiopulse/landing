@@ -1,9 +1,9 @@
-import HeroButton from "./hero-buttons";
-import HeroFooter from "./hero-footer";
-import HeroTitleAndDescription from "./hero-title-and-desc";
+import HeroButton from "./HeroButtons";
+import HeroFooter from "./HeroFooter";
+import HeroTitleAndDescription from "./HeroTitle";
 import { HeroFooterInfo } from "@/lib/mockData";
 
-export default function HeroPage() {
+export default function HeroSection() {
   return (
     <div
       className="w-full min-h-screen bg-cover bg-center relative"

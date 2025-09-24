@@ -1,14 +1,6 @@
-import { ChartColumn } from "lucide-react";
-
 export default function HeroTitleAndDescription() {
   return (
   <div className="flex flex-col items-center justify-center w-full px-4 font-sans">
-      {/* Icon */}
-      <div className="flex justify-center mb-10 w-full">
-        <ChartColumn
-          className="w-12 h-12 md:w-14 md:h-14 p-1.5 rounded-4xl text-background mx-auto bg-gradient-to-r from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)]"
-        />
-      </div>
       {/* Title and Description */}
       <div className="w-full flex flex-col items-center">
         {/* Title */}

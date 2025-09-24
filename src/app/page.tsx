@@ -1,18 +1,15 @@
-import Footer from "@/components/Footer/Footer";
-import AboutSection from "@/components/MeetSentioPulse/AboutSection";
-import PricingSection from "@/components/PricingSection";
-import MeetSentioPulseSection from "@/components/MeetSentioPulse/meetSentioPulseSection";
-import PricingSection from "@/components/Pricing/PricingSection";
-import StatsSection from "@/components/Stats/StatsSection";
-import FeatureSection from "@/components/Features/FeatureSection";
-import HeroFrontPage from "./hero/page";
-
+import HeroSection from "@/components/Hero/HeroSection"
+import FeatureSection from "@/components/Features/FeatureSection"
+import AboutSection from "@/components/MeetSentioPulse/AboutSection"
+import PricingSection from "@/components/Pricing/PricingSection"
+import StatsSection from "@/components/Stats/StatsSection"
+import Footer from "@/components/Footer/Footer"
 
 
 export default function HomePage() {
   return <main className="w-full">
-    <HeroFrontPage/>
-    <FeatureFrontPage/>
+    <HeroSection />
+    <FeatureSection />
     <AboutSection />
     <PricingSection />
     <StatsSection />

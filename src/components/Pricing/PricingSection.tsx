@@ -1,76 +1,82 @@
+
 import React from "react";
 import { Mail, Crown } from "lucide-react";
 import { PricingCard } from "./PricingCard";
 
+const TIERS = [
+  {
+    title: "Free",
+    price: "$0",
+    priceSub: "/forever",
+    description: "Get started with essential sentiment insights.",
+    features: [
+      "Weekly newsletter with key insights",
+      "Daily sentiment posts on Twitter/X",
+      "Access to public sentiment feed",
+      "Basic market coverage (BTC, ETH, SPY)",
+      "Community support",
+    ],
+    icon: (
+      <span className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)] shadow-lg">
+        <Mail size={32} className="text-background" />
+      </span>
+    ),
+    buttonText: "Start Free",
+    cardClassName:
+      "rounded-3xl border border-border bg-[var(--custom-card-color)] shadow-xl backdrop-blur-xl p-8 flex flex-col items-center gap-6 min-h-[500px] w-full transition duration-300 hover:shadow-[0_0_24px_rgba(33,143,88,0.15)]",
+    buttonClassName:
+      "bg-background text-foreground rounded-lg font-medium text-base px-8 py-3 shadow-md transition hover:opacity-90 w-full mt-6",
+  },
+  {
+    title: "Premium",
+    price: "$29",
+    priceSub: "/month",
+    description: "Unlock advanced analytics and real-time alerts.",
+    features: [
+      "Real-time email alerts for custom assets",
+      "Interactive dashboard with filtering",
+      "Extended market coverage (500+ assets)",
+      "Trustworthiness scoring",
+      "Historical sentiment data",
+      "API access (coming soon)",
+      "Priority support",
+    ],
+    icon: (
+      <span className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[var(--custom-blue)] via-[var(--custom-purple)] to-[var(--custom-green)] shadow-lg">
+        <Crown size={32} className="text-background" aria-hidden="true" />
+      </span>
+    ),
+    buttonText: "Start Premium Trial",
+    highlight: "Most Popular",
+    cardClassName:
+      "relative rounded-3xl border-2 border-[var(--custom-green)] bg-[var(--custom-card-color)] shadow-[0_0_32px_rgba(33,143,88,0.15)] backdrop-blur-xl p-8 flex flex-col items-center gap-6 min-h-[520px] w-full md:-mt-6",
+    buttonClassName:
+      "bg-gradient-to-r from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)] text-background rounded-lg font-bold text-base px-8 py-3 shadow-md transition hover:opacity-90 w-full mt-4",
+  },
+];
+
 export default function PricingSection() {
-  // Features for each tier
-  const freeFeatures = [
-    "Weekly newsletter with key insights",
-    "Daily sentiment posts on Twitter/X",
-    "Access to public sentiment feed",
-    "Basic market coverage (BTC, ETH, SPY)",
-    "Community support",
-  ];
-  const premiumFeatures = [
-    "Real-time email alerts for custom assets",
-    "Interactive dashboard with filtering",
-    "Extended market coverage (500+ assets)",
-    "Trustworthiness scoring",
-    "Historical sentiment data",
-    "API access (coming soon)",
-    "Priority support",
-  ];
-
   return (
-    <section className="w-full flex flex-col items-center justify-center py-20 px-4 bg-[var(--custom-card-color-two)]">
-      {/* Title */}
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 text-foreground">
-        Choose Your{" "}
-        <span className="text-[var(--custom-green)]">Signal Strength</span>
-      </h2>
-      <p className="text-lg text-muted-foreground text-center max-w-3xl mb-12 font-normal">
-        Start with our free tier and upgrade when you&apos;re ready for advanced features.
-      </p>
-
-      {/* Pricing Cards */}
-      <div className="w-full max-w-6xl grid md:grid-cols-2 gap-6 mt-6">
-        <PricingCard
-          icon={
-            <span className="flex h-18 w-18 items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--custom-green)_0%,var(--custom-blue)_40%,var(--custom-purple)_90%)] shadow">
-              <Mail size={35} className="text-background" />
-            </span>
-          }
-          title="Free Tier"
-          price="$0"
-          priceSub="/forever"
-          description="Perfect for getting started with market sentiment"
-          features={freeFeatures}
-          buttonText="Start Free"
-          cardClassName="rounded-2xl border border-border bg-[var(--custom-card-color)] shadow-2xl backdrop-blur-xl p-7 flex flex-col items-center gap-5 h-[600px] w-[90%] transition duration-300 hover:shadow-[0_0_20px_rgba(33,143,88,0.5)]"
-          buttonClassName="bg-background text-foreground rounded-lg font-light text-lg px-10 py-4 shadow-lg transition hover:opacity-90 md:w-96 mt-6 text-center"
-        />
-
-        <PricingCard
-          icon={
-            <span className="inline-flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--custom-blue)_0%,var(--custom-purple)_40%,var(--custom-green)_90%)] shadow mt-2">
-              <Crown size={35} className="text-background" aria-hidden="true" />
-            </span>
-          }
-          title="Premium"
-          price="$29"
-          priceSub="/per month"
-          description="Advanced features for serious traders and investors"
-          features={premiumFeatures}
-          buttonText="Start Premium Trial"
-          highlight="Most Popular"
-          cardClassName="relative rounded-2xl border border-[var(--custom-green)] bg-[var(--custom-card-color)] shadow-[0_0_20px_rgba(33,143,88,0.5)] backdrop-blur-xl p-7 flex flex-col items-center gap-5 h-[650px] w-[95%] -mt-6"
-          buttonClassName="bg-[linear-gradient(90deg,var(--custom-green)_0%,var(--custom-blue)_50%,var(--custom-purple)_100%)] text-background rounded-lg font-bold text-lg px-10 py-4 shadow-lg transition hover:opacity-90 md:w-96 mt-2 text-center"
-        />
+    <section className="w-full flex flex-col items-center justify-center py-24 px-4 bg-[var(--custom-card-color-two)]">
+      <div className="max-w-2xl mx-auto text-center mb-14">
+        <h2 className="text-5xl md:text-6xl font-extrabold mb-5 text-foreground leading-tight">
+          <span className="block">Simple, Transparent</span>
+          <span className="block text-[var(--custom-green)]">Pricing</span>
+        </h2>
+        <p className="text-lg md:text-xl text-muted-foreground font-normal">
+          Start free, upgrade anytime. No hidden fees. Cancel anytime.
+        </p>
       </div>
-
-      <p className="text-lg text-muted-foreground text-center mt-16">
-        All plans include our 30-day money-back guarantee. No questions asked.
-      </p>
+      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10">
+        {TIERS.map((tier, idx) => (
+          <PricingCard key={tier.title} {...tier} />
+        ))}
+      </div>
+      <div className="w-full max-w-2xl mx-auto mt-16 text-center">
+        <p className="text-base md:text-lg text-muted-foreground">
+          <span className="font-semibold text-foreground">30-day money-back guarantee.</span> No questions asked.
+        </p>
+      </div>
     </section>
   );
 }

@@ -10,7 +10,6 @@ export default function HeroButton() {
       <Button
         asChild
         size="lg"
-        className="text-lg bg-gradient-to-r from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)] text-white hover:scale-105 hover:shadow-lg transition-transform duration-200"
       >
         <Link href="/signup">
           Start Free Trial
@@ -20,7 +19,7 @@ export default function HeroButton() {
       <Button
         asChild
         size="lg"
-        className="text-lg bg-background text-foreground hover:scale-105 hover:shadow-lg hover:bg-accent hover:text-accent-foreground transition-transform duration-200"
+        variant={"secondary"}
       >
         <Link href="/demo">
           View Live Demo

@@ -9,7 +9,7 @@ export default function HeroSection() {
       className="w-full min-h-screen bg-cover bg-center relative"
       style={{ backgroundImage: "url('/herosection.jpeg')" }}
     >
-      <div className="absolute inset-0 bg-background opacity-60 z-0 backdrop-blur-md"></div>
+      <div className="absolute inset-0 bg-black opacity-60 z-0 backdrop-blur-md"></div>
       <div className="relative z-10">
         <HeroTitleAndDescription />
         <HeroButton />

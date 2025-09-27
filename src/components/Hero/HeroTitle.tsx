@@ -10,7 +10,7 @@ export default function HeroTitleAndDescription() {
         {/* Gradient Text */}
         <div className="flex justify-center mb-10 w-full">
           <div className="w-full max-w-2xl md:max-w-4xl h-12 md:h-16 py-14 mx-auto flex items-center justify-center">
-            <span className="text-7xl font-bold bg-gradient-to-r from-[var(--custom-green)] via-[var(--custom-blue)] to-[var(--custom-purple)] bg-clip-text text-transparent py-1">Clear Signals</span>
+            <span className="text-7xl font-bold bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 bg-clip-text text-transparent py-1">Clear Signals</span>
           </div>
         </div>
         {/* Description*/}

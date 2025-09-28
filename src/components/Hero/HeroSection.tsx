@@ -10,7 +10,7 @@ export default function HeroSection() {
       style={{ backgroundImage: "url('/herosection.jpeg')" }}
     >
       <div className="absolute inset-0 bg-black opacity-60 z-0 backdrop-blur-md"></div>
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col justify-center items-center min-h-screen pt-24">
         <HeroTitleAndDescription />
         <HeroButton />
         <div className="w-full flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center items-center gap-12 md:gap-20 mt-10">

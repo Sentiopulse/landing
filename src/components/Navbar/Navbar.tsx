@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 flex flex-col md:flex-row items-center justify-between bg-transparent backdrop-blur-md font-sans border-b shadow-lg px-6 z-50">
+    <nav className="fixed top-0 flex items-center justify-between bg-transparent backdrop-blur-md border-b shadow-lg px-6 z-50 w-full">
       <div className="flex items-center space-x-6 md:space-x-4">
         <ChartColumn
           className="w-6 h-6 md:w-12 md:h-12 p-1.5 rounded-4xl text-white mx-auto"/>

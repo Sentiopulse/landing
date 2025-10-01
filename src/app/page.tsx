@@ -7,7 +7,7 @@ import Footer from "@/components/Footer/Footer"
 
 
 export default function HomePage() {
-  return <main className="w-full">
+  return <main className="w-full bg-black">
     <HeroSection />
     <FeatureSection />
     <AboutSection />

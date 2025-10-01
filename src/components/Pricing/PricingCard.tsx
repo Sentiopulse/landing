@@ -34,14 +34,14 @@ export function PricingCard({
   footerClassName = "",
 }: PricingCardProps) {
   return (
-    <Card className={cardClassName}>
+    <Card className='bg-[#012406]'>
       {highlight && (
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(90deg,var(--custom-purple)_0%,var(--custom-blue)_100%)] text-background text-xs px-3 py-1 rounded-full font-medium">
           {highlight}
         </div>
       )}
       <CardHeader className="flex flex-col items-center gap-4 relative">
-        <span className="flex items-center justify-center rounded-full shadow mt-2">
+        <span className="flex items-center justify-center rounded-full shadow mt-2 bg-black">
           {icon}
         </span>
         <CardTitle className="font-bold text-4xl text-foreground text-center whitespace-nowrap">

@@ -13,7 +13,7 @@ export default function FeatureCard({
   description,
 }: ReusableFeatureCardProps) {
   return (
-    <Card className="p-8 hover:scale-[1.03] transition-transform duration-200 min-h-[340px] flex flex-col justify-start w-full max-w-sm mx-auto">
+    <Card className="p-8 hover:scale-[1.03] transition-transform duration-200 min-h-[340px] flex flex-col justify-start w-full max-w-sm mx-auto bg-[#012406]">
       <CardHeader className="flex flex-col items-start gap-4 p-0">
         <div className="flex items-center justify-center rounded-full bg-destructive/20 shadow-lg w-16 h-16 mb-3">
           {icon &&

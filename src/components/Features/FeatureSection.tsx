@@ -1,5 +1,5 @@
 import { FeatureCards } from "@/lib/mockData";
-import ReusableFeatureCard from "./FeatureCard";
+import FeatureCard from "./FeatureCard";
 import FeatureTitle from "./FeatureTitle";
 
 export default function FeatureSection() {
@@ -9,7 +9,7 @@ export default function FeatureSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mt-10">
         {FeatureCards.map((card, index) => (
           <div key={index} className="flex justify-center">
-            <ReusableFeatureCard
+            <FeatureCard
               title={card.title}
               description={card.description}
               icon={card.icon}

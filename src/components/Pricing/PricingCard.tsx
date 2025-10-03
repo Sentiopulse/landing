@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "../ui/card";
 import { FaCheck } from "react-icons/fa";
+import { Button } from "../ui/button";
 
 interface PricingCardProps {
   icon: React.ReactNode;
@@ -34,13 +35,13 @@ export function PricingCard({
   footerClassName = "",
 }: PricingCardProps) {
   return (
-    <Card className='bg-[#012406]'>
+    <Card className={`bg-[#012406] relative flex flex-col h-full ${cardClassName}`}> 
       {highlight && (
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(90deg,var(--custom-purple)_0%,var(--custom-blue)_100%)] text-background text-xs px-3 py-1 rounded-full font-medium">
           {highlight}
         </div>
       )}
-      <CardHeader className="flex flex-col items-center gap-4 relative">
+  <CardHeader className="flex flex-col items-center gap-4 relative">
         <span className="flex items-center justify-center rounded-full shadow mt-2 bg-black">
           {icon}
         </span>
@@ -55,7 +56,7 @@ export function PricingCard({
           {description}
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex justify-start w-full">
+  <CardContent className="flex justify-start w-full">
         <ul className="text-md text-foreground space-y-4 text-left pl-6">
           {features.map((feature, idx) => (
             <li className="flex items-center gap-2" key={idx}>
@@ -64,8 +65,8 @@ export function PricingCard({
           ))}
         </ul>
       </CardContent>
-      <CardFooter className={footerClassName}>
-        <button className={buttonClassName}>{buttonText}</button>
+      <CardFooter className={`flex justify-center items-center mt-auto ${footerClassName}`}> 
+        <Button className="w-full hover:scale-105 duration-300 text-lg text-white">{buttonText}</Button>
       </CardFooter>
     </Card>
   );

@@ -1,10 +1,11 @@
 "use client";
+import React from "react";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import { TrendingUp } from "lucide-react";
 import Link from "next/link";
 
-export default function HeroButton() {
+const HeroButton: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-6 font-sans">
       <Button
@@ -28,4 +29,6 @@ export default function HeroButton() {
       </Button>
     </div>
   );
-}
+};
+
+export default HeroButton;

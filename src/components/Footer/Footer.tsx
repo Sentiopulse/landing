@@ -86,6 +86,7 @@ export default function Footer() {
                 <li key={item}>
                   <a
                     href="#"
+                    aria-label={item}
                     className="text-muted-foreground hover:text-foreground transition"
                   >
                     {item}
@@ -102,7 +103,7 @@ export default function Footer() {
       />
       {/* Copyright and bottom */}
       <div className="max-w-7xl mx-auto flex flex-wrap md:flex-nowrap justify-between items-center px-4 pt-2 text-sm text-muted-foreground">
-        <span>© 2024 SentioPulse. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} SentioPulse. All rights reserved.</span>
         <span className="mt-2 md:mt-0">
           Built with AI • Powered by sentiment
         </span>

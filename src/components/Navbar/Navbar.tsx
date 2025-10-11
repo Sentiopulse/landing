@@ -4,32 +4,32 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 flex items-center justify-between bg-transparent backdrop-blur-md border-b shadow-lg px-6 z-50 w-full">
+    <nav className="fixed top-0 flex items-center justify-between bg-transparent backdrop-blur-md border-b shadow-lg px-6 z-50 w-full" aria-label="Main navigation">
       <div className="flex items-center space-x-6 md:space-x-4">
         <span className="font-bold text-xl">SentioPulse</span>
       </div>
       <div className="flex space-x-10 md:space-x-8 space-y-6 mt-6">
         <Link
           href="/features"
-          className="text-lg text-muted-foreground hover:text-foreground"
+          className="text-lg text-muted-foreground hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Features
         </Link>
         <Link
           href="/pricing"
-          className="text-lg text-muted-foreground hover:text-foreground"
+          className="text-lg text-muted-foreground hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Pricing
         </Link>
         <Link
           href="/about"
-          className="text-lg text-muted-foreground hover:text-foreground"
+          className="text-lg text-muted-foreground hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           About
         </Link>
         <Link
           href="/contact"
-          className="text-lg text-muted-foreground hover:text-foreground"
+          className="text-lg text-muted-foreground hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Contact
         </Link>
